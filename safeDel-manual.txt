@@ -1,0 +1,46 @@
+SAFEDEL(1)		    General Commands Manual		    SAFEDEL(1)
+
+
+
+NAME
+       safeDel - moves files to trashcan and manipulates them
+
+SYNOPSIS
+       fileViewer [OPTION]... FILE
+
+DESCRIPTION
+       safeDel	is a bash script that moves files to a trash can directory and
+       provides a way to restore them to the working directory.  It also lists
+       files  in  the  trash can with their name, size, and file extension. In
+       addition, it provides a method to completely erase the files  from  the
+       trash  can.  When  the  size  of the trashcan exceeds one kilo byte, it
+       throws a warning to the user.
+
+
+   OPTIONS
+       -l     lists all files in the trashcan directory
+
+       -r file
+	      restores the the file moved to trashcan to the working directory
+
+       -d     erases the files from the trashcan completely
+
+       -t     shows the total size of the trashcan directory in bytes
+
+       -m     monitors monitors activities like creation, deletion, and  modi-
+	      fication of files in the trash can
+
+       -k     kills the current monitor script
+
+
+EXAMPLES
+       delete a file called example.txt
+	      safeDel  example.txt
+
+
+AUTHOR
+       Written by Yonas
+
+
+
+								    SAFEDEL(1)
